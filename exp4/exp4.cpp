@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_DEPRECATE
 #include<iostream>
+
 int fib() {
 	int n;
 	printf("input the length of Fibonacii :n:\n");
@@ -10,7 +11,7 @@ int fib() {
 	for (int i = 3; i <= n; i++)
 		*(p + i) = *(p + i - 1) + *(p + i - 2);
 	for (int i = 1; i <= n; i++)
-		printf("%d", *(p + i));
+		printf("%d ", *(p + i));
 	return 0;
 }
 int fx() {
@@ -22,9 +23,10 @@ int game() {
 
 
 int main() {
-	printf("Choose the function you want to use : \n1.Fibonacci sequence\n2.f(x)=0\n3.Game");
+	printf("Choose the function you want to use : \n1.Fibonacci sequence\n2.f(x)=0\n3.Game\n");
 	int c;
-	scanf("%d", &c);
+	while(c){
+		scanf("%d", &c);
 	switch (c)
 	{
 	case 1:fib();
@@ -33,5 +35,6 @@ int main() {
 		break;
 	case 3:game();
 		break;
-	}
+	}}
+	
 }
