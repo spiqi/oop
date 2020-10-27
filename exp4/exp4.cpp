@@ -23,10 +23,10 @@ int game() {
 
 
 int main() {
-	printf("Choose the function you want to use : \n1.Fibonacci sequence\n2.f(x)=0\n3.Game\n");
+	printf("Choose the function you want to use : \n1.Fibonacci sequence\n2.f(x)=0\n3.Game\n0.exit\n");
 	int c;
+	scanf("%d", &c);
 	while(c){
-		scanf("%d", &c);
 	switch (c)
 	{
 	case 1:fib();
@@ -35,6 +35,8 @@ int main() {
 		break;
 	case 3:game();
 		break;
-	}}
+	}
+	scanf("%d", &c);
+	}
 	
 }
