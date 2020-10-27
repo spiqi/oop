@@ -36,6 +36,7 @@ int main() {
 	case 3:game();
 		break;
 	}
+	printf("\nChoose the function you want to use : \n1.Fibonacci sequence\n2.f(x)=0\n3.Game\n0.exit\n");
 	scanf("%d", &c);
 	}
 	
