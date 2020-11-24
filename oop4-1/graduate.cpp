@@ -15,6 +15,8 @@ printf("无参构造");
   id(idnum),
   gender(sex){
       printf("带参构造");
+      name=noname;
+      university="sdnu";
   }
   Graduate(Graduate &g){
       id=g.id;
@@ -42,8 +44,10 @@ void output(int a) const{
 
 class Student{
     public:
-    friend void Graduate::Graduate
-}
+    friend void Graduate::Graduate(const Student &){
+        
+    }
+};
 
 int main(){
     Graduate gra[10];
@@ -51,7 +55,7 @@ std::cout<< "how many graduate:"<<std::endl;
 int granum;
 std::cin>>granum;
 for(int i=0;i<granum;i++){
-    
+
 }
     return 0;
 }
